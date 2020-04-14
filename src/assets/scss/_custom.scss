@@ -1,0 +1,268 @@
+// Here you can add other styles
+
+.modal-header {
+  background-color: $grey-800;
+}
+.modal-header, .modal-footer {
+  padding: .5rem .7rem;
+}
+.severity-critical, .status-failed {
+  color: $severity-critical;
+}
+.severity-high {
+  color:$severity-high;
+}
+.severity-medium, .status-warning {
+  color: $severity-medium;
+}
+.severity-low, .status-passed {
+  color: $severity-low;
+}
+.severity-info {
+  color: $severity-info;
+}
+.severity-unassigned {
+  color: $severity-unassigned;
+}
+.severity-critical-bg, .bg-severity-critical, .bg-CRITICAL {
+  background: $severity-critical none;
+}
+.severity-high-bg, .bg-severity.high, .bg-HIGH {
+  background: $severity-high none;
+}
+.severity-medium-bg, .bg-severity-medium, .bg-MEDIUM {
+  background: $severity-medium none;
+}
+.severity-low-bg, .bg-severity-low, .bg-LOW {
+  background: $severity-low none;
+}
+.severity-info-bg, .bg-severity-info, .bg-INFO {
+  background: $severity-info none;
+}
+.severity-unassigned-bg, .bg-severity-unassigned, .bg-UNASSIGNED {
+  background: $severity-unassigned none;
+}
+.severity-bug-icon {
+  width:40px;
+  height:40px;
+  color:#ffffff;
+}
+.severity-bug-label {
+  height:40px;
+  color:#ffffff;
+  background-color: $severity-label-bg;
+}
+.label-source {
+  color: #222222;
+  padding: .2em .6em .3em;
+  font-weight: normal;
+  font-size: 75%;
+}
+.label-source-nvd {
+  background-color: #AECEE5;
+  border: 1px solid #5C9CCB;
+}
+.label-source-npm {
+  background-color: #B4AFE4;
+  border: 1px solid #6E63CC;
+}
+.label-source-ossindex {
+  background-color: #AFE4BF;
+  border: 1px solid #73D08F;
+}
+.label-source-vulndb {
+  background-color: #FFC78B;
+  border: 1px solid #FE9536;
+}
+.label-source-victims {
+  background-color: #E4AFAF;
+  border: 1px solid #CC6666;
+}
+.label-source-internal {
+  background-color: #EBE5A8;
+  border: 1px solid #DCD167;
+}
+.label-notification {
+  color: #222222;
+  padding: .2em .6em .3em;
+  font-weight: normal;
+  font-size: 75%;
+}
+.label-notification-fail {
+  background-color: lighten($notification-fail, 15% );
+  border: 1px solid $notification-fail;
+}
+.label-notification-warn {
+  background-color: lighten($notification-warn, 15% );
+  border: 1px solid $notification-warn;
+}
+.label-notification-info {
+  background-color: lighten($notification-info, 15% );
+  border: 1px solid $notification-info;
+}
+.table {
+  background-color: $grey-750;
+}
+.table td.tight, .table th.tight {
+  width: 1%;
+}
+.table td.expand, .table th.expand {
+  width: 10%;
+}
+.table td.expand-20, .table th.expand-20 {
+  width: 20%;
+}
+label.required:after {
+  color: #d62728;
+  content:" *";
+}
+input.required, select.required, textarea.required {
+  border-color: #ffd700;
+}
+
+/* usage: use outer div/span with class truncate-ellipsis or truncate-ellipsis-inline and inner span with content to truncate */
+.truncate-ellipsis {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  white-space: nowrap;
+}
+.truncate-ellipsis > * {
+  display: table-cell;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.truncate-ellipsis-inline {
+  display: inline-table;
+  table-layout: fixed;
+  width: 100%;
+  white-space: nowrap;
+}
+.truncate-ellipsis-inline > * {
+  display: table-cell;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.body-bg-color {
+  background-color: $body-bg;
+}
+.tab-content {
+  background: $body-bg;
+}
+.nav-tabs .nav-link.active {
+  background: $grey-700;
+  border-bottom-color: $grey-700;
+  color: $white;
+}
+.nav-tabs .nav-link.active:focus {
+  background: $grey-700;
+  border-bottom-color: $grey-700;
+}
+.card-footer-action:hover {
+  background: $grey-800;
+}
+.callout-severity-critical {
+  border-left-color: $severity-critical;
+}
+.callout-severity-high {
+  border-left-color: $severity-high;
+}
+.callout-severity-medium {
+  border-left-color: $severity-medium;
+}
+.callout-severity-low {
+  border-left-color: $severity-low;
+}
+.callout-severity-info {
+  border-left-color: $severity-info;
+}
+.callout-severity-unassigned {
+  border-left-color: $severity-unassigned;
+}
+.toast-container>div {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.expanded-row {
+  margin-top:-12px;
+  margin-bottom:-12px;
+  padding-top:20px;
+  padding-bottom: 20px;
+  background-color: $grey-800;
+}
+
+.btn-spaced-group .btn {
+  margin-right: 0.5rem;
+}
+
+.formattedLicenseContent {
+  font-size: 1.25em;
+  font-family: monospace;
+  white-space: pre-wrap;
+}
+
+/* Bootstrap Toggle v2.2.2 corrections for Bootsrtap 4*/
+.toggle-off {
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.toggle.off {
+  border-color: rgba(0, 0, 0, .25);
+}
+.toggle-handle {
+  background-color: $toggle-handle-bg;
+  border: thin rgba(0, 0, 0, .25) solid;
+}
+h6 {
+  font-size: 1.0em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.switch {
+  vertical-align: middle;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  margin-right: 1rem;
+}
+.switch-slider {
+  background-color: $switch-bg;
+}
+.switch-slider:before {
+  background-color: $grey-200;
+}
+.card-footer > :not(:last-child) {
+  margin-right: .25rem;
+}
+.card-footer > :not(:first-child) {
+  margin-left: .25rem;
+}
+.bs-table-custom-toolbar > :not(:last-child) {
+  margin-right: .25rem;
+}
+.bs-table-custom-toolbar > :not(:first-child) {
+  margin-left: .25rem;
+}
+.bootstrap-table .fixed-table-container .fixed-table-body .fixed-table-loading {
+  background: $grey-750  !important;
+}
+.bootstrap-table .fixed-table-container .fixed-table-body .fixed-table-loading.table-dark .animation-dot,
+.bootstrap-table .fixed-table-container .fixed-table-body .fixed-table-loading.table-dark .animation-wrap::after,
+.bootstrap-table .fixed-table-container .fixed-table-body .fixed-table-loading.table-dark .animation-wrap::before {
+  background: $grey-750  !important;;
+}
+.was-validated .form-control:invalid, .form-control.is-invalid {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23dc3545' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+}
+.bg-widget {
+  background-color: $grey-750;
+}
+button:focus {
+  outline: 0;
+}
+.badge-tab-total {
+  border: 1px solid #60768c !important;
+  background-color: $grey-900 !important;
+  margin-left: 0.6em !important;
+  color: #21D983 !important;
+}

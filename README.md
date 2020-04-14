@@ -7,9 +7,37 @@
 
 # CycloneDX Authoring Tool
 
-The CycloneDX Authoring Tool (CAT) is an experimental user interface for manually creating, editing, and viewing CycloneDX SBOMs. The tool is written in Vue.js and utilizes the Bootstrap CSS and component framework.
+The CycloneDX Authoring Tool (CAT) is an experimental user interface for manually creating, editing, and viewing CycloneDX SBOMs.
+The project is built with:
 
+* Vue 2.x / CLI 3.x
+* Bootstrap Vue
+* CoreUI
 
+## Build Setup
+
+``` bash
+# Install dependencies
+npm install
+
+# Serve with hot reload at localhost:8080
+npm run serve
+
+# Build for production with minification
+npm run build
+
+# Run linter
+npm run lint
+
+# Generates a CycloneDX software bill-of-materials
+npm run bom
+```
+
+## Internationalization (i18n)
+
+This project supports internationalization. Currently only English language is supported. Pull requests to support additional languages are encouraged.
+
+Note to developers: Textual labels are defined in `src/i18n/messages.json`. Ensure that all labels are defined here and that components use i18n, not textual labels directly.
 
 ## License
 

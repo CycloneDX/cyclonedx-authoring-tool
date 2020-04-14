@@ -2,7 +2,7 @@
   <div class="animated fadeIn">
 
     <b-card header="CycloneDX Authoring Tool (CAT)" header-tag="header">
-      <img class="d-lg-inline" style="margin-bottom: 50px" src="@/assets/img/brand/logo-aqua.svg" width="350" alt="CycloneDX Logo"/>
+      <img class="d-lg-inline" style="margin-bottom: 50px" src="@/assets/img/brand/logo.svg" width="350" alt="CycloneDX Logo"/>
       <br/>
       <p>
         CycloneDX is a lightweight software bill-of-materials (SBOM) specification designed for use in application

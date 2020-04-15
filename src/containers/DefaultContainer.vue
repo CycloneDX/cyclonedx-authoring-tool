@@ -47,12 +47,12 @@
         {
           name: this.$t('message.welcome'),
           url: '/welcome',
-          icon: 'fa fa-home',
+          icon: 'cui-home',
         },
         {
           name: this.$t('message.create_bom'),
           url: '/create',
-          icon: 'fa fa-plus-square',
+          icon: 'cui-layers',
         }
       ]
       }

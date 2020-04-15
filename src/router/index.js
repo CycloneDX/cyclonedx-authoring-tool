@@ -6,7 +6,7 @@ const DefaultContainer = () => import('@/containers/DefaultContainer');
 
 // Views
 const Welcome = () => import('@/views/Welcome');
-//const ProjectList = () => import('@/views/portfolio/projects/ProjectList');
+const ComponentList = () => import('@/views/bom/ComponentList');
 
 // Pages
 const Page404 = () => import('@/views/pages/Page404');
@@ -28,6 +28,15 @@ function configRoutes() {
           meta: {
             i18n: 'message.welcome',
             sectionPath: '/welcome'
+          }
+        },
+        {
+          path: 'create',
+          name: 'Create BOM',
+          component: ComponentList,
+          meta: {
+            i18n: 'message.create_bom',
+            sectionPath: '/create'
           }
         }
       ]

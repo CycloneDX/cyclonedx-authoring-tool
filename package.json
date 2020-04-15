@@ -12,8 +12,9 @@
   },
   "scripts": {
     "start": "npm run serve",
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build && npm run bom",
+    "serve": "npm run prebuild && vue-cli-service serve",
+    "prebuild": "node update-embedded-version.js",
+    "build": "npm run prebuild && vue-cli-service build && npm run bom",
     "lint": "vue-cli-service lint",
     "bom": "cyclonedx-bom -o bom.xml"
   },
@@ -24,6 +25,7 @@
     "@coreui/vue": "^2.1.2",
     "@johmun/vue-tags-input": "^2.1.0",
     "bootstrap": "^4.4.1",
+    "bootstrap-table": "1.15.5",
     "bootstrap-vue": "2.5.0",
     "core-js": "^2.6.9",
     "css-vars-ponyfill": "^2.2.1",

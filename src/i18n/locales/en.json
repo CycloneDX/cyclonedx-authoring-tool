@@ -1,7 +1,11 @@
 {
   "message": {
     "welcome": "Welcome",
-    "create_bom": "Create BOM"
+    "create_bom": "Create BOM",
+    "add_component": "Add Component",
+    "group": "Group",
+    "name": "Name",
+    "version": "Version"
   },
   "validation": {
     "required": "{_field_} is required",

@@ -20,12 +20,14 @@
 
       </AppAside>
     </div>
+    <DefaultFooter/>
   </div>
 </template>
 
 <script>
   import { Sidebar as AppSidebar, SidebarFooter, SidebarForm, SidebarHeader, SidebarMinimizer, SidebarNav, Aside as AppAside, Breadcrumb } from '@coreui/vue'
   import DefaultHeader from './DefaultHeader'
+  import DefaultFooter from "./DefaultFooter";
 
   export default {
     name: 'DefaultContainer',
@@ -38,7 +40,8 @@
       SidebarHeader,
       SidebarNav,
       SidebarMinimizer,
-      DefaultHeader
+      DefaultHeader,
+      DefaultFooter
     },
     data () {
       return {

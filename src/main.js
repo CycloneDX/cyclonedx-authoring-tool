@@ -8,8 +8,10 @@ import BootstrapVue from 'bootstrap-vue'
 import App from './App'
 import router from './router'
 import i18n from './i18n'
-import './validation'
 import VueToastr from "vue-toastr";
+import './validation'
+import './plugins/table.js'
+import version from "./version";
 
 Vue.use(BootstrapVue);
 Vue.use(VueToastr, {
@@ -19,6 +21,8 @@ Vue.use(VueToastr, {
   defaultPosition: "toast-top-right",
   defaultCloseOnHover: false
 });
+
+Vue.prototype.$version = version;
 
 new Vue({
   el: '#app',

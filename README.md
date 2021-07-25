@@ -39,7 +39,9 @@ This project supports internationalization. Currently only English language is s
 
 Note to developers: Textual labels are defined in `src/i18n/messages.json`. Ensure that all labels are defined here and that components use i18n, not textual labels directly.
 
-## License
+## Copyright & License
+
+CycloneDX Authoring Tool is Copyright (c) OWASP Foundation. All Rights Reserved.
 
 Permission to modify and redistribute is granted under the terms of the MIT license. See the [LICENSE] file for the full license.
 
